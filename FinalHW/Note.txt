@@ -1,0 +1,14 @@
+Unit05-2
+
+#探索資料
+#用heatmap(.isnull()來找出缺失的資料在哪些欄位。Age似乎約有五分之一的資料缺失，可用合理資料補充。)
+sns.heatmap(train.isnull(),yticklabels=False,cbar=False,cmap='viridis')
+
+
+#將性別及上船港口的數值變數和原始的data結合
+train = pd.concat([train,sex,embark],axis=1)
+
+#將原始的性別、登船港口、票號、姓名欄位棄用
+train.drop(['Sex','Embarked','Name','Ticket'],axis=1,inplace=True)
+
+SVM 屬於分類模型
