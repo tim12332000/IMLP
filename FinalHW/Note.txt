@@ -12,3 +12,18 @@ train = pd.concat([train,sex,embark],axis=1)
 train.drop(['Sex','Embarked','Name','Ticket'],axis=1,inplace=True)
 
 SVM 屬於分類模型
+
+
+AI -> 分類 or 建立趨勢分析模型
+
+找網路上 有人做訓練模型AI
+
+#訓練體重要到達X公斤 需要多久 & 體脂肪 & 肌肉量 & PR 會是多少?
+
+#訓練容量 分散到前後5天
+
+#加上之前INBODY資料&訓練資料 ?
+
+# 创建 PairGrid，使用 'Date' 列来表示颜色
+#g = sns.PairGrid(train_df,hue='Date')
+#g.map(plt.scatter)
