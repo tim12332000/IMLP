@@ -27,3 +27,8 @@ AI -> 分類 or 建立趨勢分析模型
 # 创建 PairGrid，使用 'Date' 列来表示颜色
 #g = sns.PairGrid(train_df,hue='Date')
 #g.map(plt.scatter)
+
+
+Regression <-- 可以處理多維特徵?
+
+Multiple Regression
